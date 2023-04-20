@@ -8,6 +8,7 @@ Description: It contains a constructor and a print function.
 Imports:
   kableExtra
   ggplot2
+  reshape2
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
