@@ -1,14 +1,11 @@
 Package: RttestPackageProg4
 Type: Package
-Title: Creating a new object of class Rttest and print such an object
+Title: Creating a new object of class Rttest and print and plot such an object
 Version: 0.1.0
 Author: Babak M. Khoshroo
 Maintainer: Babak M. Khoshroo <b.khoshroo@ou.edu>
 Description: It contains a constructor and a print function. 
-Imports:
-  kableExtra
-  ggplot2
-  reshape2
+Imports: kableExtra, ggplot2, reshape2
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
