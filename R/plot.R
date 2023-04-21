@@ -14,7 +14,7 @@
 #'\dontrun{print(x)}
 plot.Rttest <- function(x,...)
 {
-  data_long <- melt(x$data)
+  data_long <- melt(x$data,)
 
   ggplot(data_long, aes(x = variable, y= value)) +
     geom_boxplot()

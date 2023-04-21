@@ -28,7 +28,9 @@ obj <- RttestPackageProg4::new_Rttest(x,y,alpha=alpha)
 print(obj)
 ```
 
+## Plot the object to get the boxplots:
 ```{r}
 plot(obj)
 ```
+
 
