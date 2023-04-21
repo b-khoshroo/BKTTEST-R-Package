@@ -17,3 +17,6 @@ prints the object
 \description{
 Title
 }
+\examples{
+\dontrun{print(x)}
+}

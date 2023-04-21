@@ -1,0 +1,34 @@
+---
+title: "Rttest Package - Progress 4"
+author: "Babak M. Khoshroo"
+date: "2023-04-21"
+output: html_document
+---
+
+## Loading my package
+```{r}
+library(RttestPackageProg4)
+```
+
+```{r}
+set.seed(21)
+x <-rnorm(30,5,2)
+set.seed(23)
+y<- rnorm(30, 3,2)
+alpha <- 0.05
+```
+
+## Creating an object by the constructor function in the package:
+```{r}
+obj <- RttestPackageProg4::new_Rttest(x,y,alpha=alpha)
+```
+
+## Printing the object by the print function in the package:
+```{r}
+print(obj)
+```
+
+```{r}
+plot(obj)
+```
+

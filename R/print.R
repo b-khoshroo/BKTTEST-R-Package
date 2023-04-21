@@ -8,6 +8,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{print(x)}
 print.Rttest <- function(x, ...)
 {
   kableExtra::kable(x$data)

@@ -17,3 +17,6 @@ a boxplot
 \description{
 Boxplot
 }
+\examples{
+\dontrun{print(x)}
+}

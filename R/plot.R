@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#'
+#'\dontrun{print(x)}
 plot.Rttest <- function(x,...)
 {
   data_long <- melt(x$data)
