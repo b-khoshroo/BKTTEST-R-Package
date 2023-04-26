@@ -28,8 +28,8 @@ plot.Rttest <- function(x,...)
   #converting d to a data frame
   d_df <- data.frame(d)
 
-  ggplot(d_df, aes(x = "difference", y= d)) +
-       geom_boxplot()
+  #ggplot(d_df, aes(x = "difference", y= d)) +
+  #     geom_boxplot()
 
   #for the confidence interval
   ci <- x$summary_stats$conf.int
@@ -37,6 +37,12 @@ plot.Rttest <- function(x,...)
   #converting ci to data frame
   ci_df <- data.frame(ci)
 
-  ggplot(ci_df, aes(x="",y=ci)) +
-         geom_line()
+  #ggplot(ci_df, aes(x="",y=ci)) +
+  #       geom_line()
+
+  ggplot() +
+    geom_boxplot(data=d_df, aes(x="",y=d), fill = "orange") +
+    geom_line(data=ci_df,aes(x="",y=ci), linewidth = 2.5) +
+    labs(x = "Difference", y = "myd") +
+    ggtitle("Differences Boxplot with the Confidence Interval")
 }
