@@ -26,6 +26,11 @@ ans1 <- BKTTEST::myttest(x,y,alpha=0.05,paired=FALSE)
 ```{r}
 print(ans1)
 ```
+```{r}
+plot(ans1)
+```
+
+
 ## Welch
 ```{r}
 set.seed(32); x=rnorm(30,mean=10,sd=5)
@@ -37,6 +42,10 @@ ans2=BKTTEST::myttest(x,y,alpha=0.05,paired=FALSE)
 ```{r}
 print(ans2)
 ```
+```{r}
+plot(ans2)
+```
+
 
 ## Paired
 ```{r}
