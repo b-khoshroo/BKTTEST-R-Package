@@ -1,15 +1,20 @@
+
+
 #' Title
 #'
-#' @param x an object of class Rttest
+#' @param x object Rttest
 #' @param ... other parameters
-#' @importFrom kableExtra kable
 #'
-#' @return prints the object
+#' @return. nothing
 #' @export
 #'
 #' @examples
 #' \dontrun{print(x)}
 print.Rttest <- function(x, ...)
 {
-  kableExtra::kable(x$data)
+  t <- x$summary_stats
+  cat("$ci\n")
+  print(t$conf.int)
+  cat("\n$Test_type\n")
+  print(x$test_type)
 }

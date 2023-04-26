@@ -7,12 +7,12 @@
 \method{print}{Rttest}(x, ...)
 }
 \arguments{
-\item{x}{an object of class Rttest}
+\item{x}{object Rttest}
 
 \item{...}{other parameters}
 }
 \value{
-prints the object
+. nothing
 }
 \description{
 Title

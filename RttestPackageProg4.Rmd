@@ -7,30 +7,48 @@ output: html_document
 
 ## Loading my package
 ```{r}
-library(RttestPackageProg4)
+library(BKTTEST)
 ```
 
 ```{r}
-set.seed(21)
-x <-rnorm(30,5,2)
-set.seed(23)
-y<- rnorm(30, 3,2)
-alpha <- 0.05
+set.seed(32)
+x=rnorm(30,mean=10,sd=15)
+set.seed(35)
+y=rnorm(30,mean=8,sd=15)
 ```
 
 ## Creating an object by the constructor function in the package:
 ```{r}
-obj <- RttestPackageProg4::new_Rttest(x,y,alpha=alpha)
+ans1 <- BKTTEST::myttest(x,y,alpha=0.05,paired=FALSE)
 ```
 
 ## Printing the object by the print function in the package:
 ```{r}
-print(obj)
+print(ans1)
 ```
-
-## Plot the object to get the boxplots:
+## Welch
 ```{r}
-plot(obj)
+set.seed(32); x=rnorm(30,mean=10,sd=5)
+set.seed(35); y=rnorm(30,mean=8,sd=15)
+ans2=BKTTEST::myttest(x,y,alpha=0.05,paired=FALSE)
 ```
 
+
+```{r}
+print(ans2)
+```
+
+## Paired
+```{r}
+set.seed(32); x=rnorm(30,mean=10,sd=15)
+set.seed(35); y = x+ rnorm(30, 5 ,4)
+ans3=BKTTEST::myttest(x,y,alpha=0.05,paired=TRUE)
+```
+
+```{r}
+print(ans3)
+```
+```{r}
+plot(ans3)
+```
 
