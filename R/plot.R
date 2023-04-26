@@ -58,9 +58,6 @@ plot.Rttest <- function(x,...)
 
     colnames(data_long) <- c("Category", "Samples")
 
-    #ggplot(data_long, aes(x = variable, y= value)) +
-    # geom_boxplot()
-
     ggplot(data_long, aes(x=Category, y=Samples, fill=Category)) +
       geom_boxplot() +
       ggtitle('Boxplots')
