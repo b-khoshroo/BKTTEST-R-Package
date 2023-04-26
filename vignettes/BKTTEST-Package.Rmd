@@ -15,5 +15,16 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(BKTTEST)
+library(BKTTEST) 
 ```
+
+## Introduction
+This package provides a few tools for Student's t-test (briefly, t-test) used in
+some statistical analyses. It can handle three types of t-test: "Two Sample 
+t-test," "Welch," and "Pired t-test." In what follows, I want to explain
+how the package works and can help us with applying an appropraite t-test
+on input data. 
+
+## The constructor method (myttest)
+The "myttest" method is a constructor creating an S3 object of type Rttest.
+
