@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Babak M. Khoshroo
 Maintainer: Babak M. Khoshroo <b.khoshroo@ou.edu>
 Description: It contains a constructor and a print function. 
-Imports: ggplot2, reshape2
+Imports: ggplot2, reshape2, shiny
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
