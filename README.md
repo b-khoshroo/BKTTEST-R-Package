@@ -8,5 +8,5 @@ The following functions are provided by the package:
 * **plot**
 
 ## Demo 
-Please see the demo PDF, which contains examples of how the package behaves. 
+Please see the PDF file (a demo) for examples of how the package behaves. 
 
