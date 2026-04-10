@@ -1,7 +1,9 @@
-# Ignore HTML files from the language statistics
+# Ignore documentation and styling files from stats
 *.html linguist-vendored
 *.js linguist-vendored
 *.css linguist-vendored
+*.tex linguist-vendored
+*.bib linguist-vendored
 
 # Explicitly ensure R is tracked 
 *.R linguist-detectable=true
